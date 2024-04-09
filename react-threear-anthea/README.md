@@ -2,6 +2,8 @@
 
 To make new markers: [Use this site] (https://jeromeetienne.github.io/AR.js/three.js/examples/marker-training/examples/generator.html)
 
+To update gh-pages run "npm run deploy"
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
