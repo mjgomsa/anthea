@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/anthea/static/css/main.dc4d6ff2.css",
+    "main.js": "/anthea/static/js/main.d687cdc9.js",
+    "index.html": "/anthea/index.html",
+    "main.dc4d6ff2.css.map": "/anthea/static/css/main.dc4d6ff2.css.map",
+    "main.d687cdc9.js.map": "/anthea/static/js/main.d687cdc9.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.dc4d6ff2.css",
+    "static/js/main.d687cdc9.js"
+  ]
+}
