@@ -1,3 +1,74 @@
+@font-face {
+  font-family: 'Inter';
+  src: url('./assets/fonts/Inter-VariableFont.ttf') format('truetype');
+  font-weight: 100 900; /* Adjust based on the actual weight range supported by the font */
+}
+
+p {
+  color: #000;
+  font-family: 'Inter';
+  font-size: 13px !important;
+  font-style: normal !important;
+  font-weight: 300 !important;
+  line-height: normal !important;
+  /* border: 1px solid red; */
+  margin: 0px !important;
+
+}
+
+.label {
+  font-size: 11px !important;
+}
+
+h1{ 
+  /* Greetings */
+  color: #000;
+  font-family: 'Inter';
+  font-size: 24px !important;
+  font-style: normal !important;
+  font-weight: 500 !important;
+  line-height: normal !important;
+}
+
+h2{
+  /* subtitles */
+  color: #000;
+  font-family: 'Inter';
+  font-size: 16px !important;
+  font-style: normal !important;
+  font-weight: 500 !important;
+  line-height: normal !important;
+  padding-top: 20px !important;
+}
+
+
+h4 {
+  color: #000;
+  font-family: 'Inter';
+  font-size: 0.625rem;
+  font-style: normal;
+  font-weight: 400 !important;
+  line-height: normal;
+  width: 5.11925rem;
+  text-align: right;
+  margin-left: 0.56rem;
+  /* border: 1px solid red; */
+  width: 9rem;
+  font-size: 16px;
+}
+
+h5 {
+  font-family: 'Inter';
+  font-size: 0.5625rem;
+  font-style: normal;
+  font-weight: 200 !important;
+  line-height: normal;
+  /* border: 1px solid blue; */
+  margin-left: 10px;
+  font-size: 14px;
+}
+
+
 .App {
   text-align: center;
 }
@@ -7,32 +78,230 @@
   pointer-events: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.profilePicture {
+  width: 145px; 
+  margin: auto;
+  display: block;
+  padding-top: 10%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.valuationParagraph{
+  text-align: center;
+}
+
+.prof_name {
+  text-align: center;
+  font-weight: 800;
+}
+
+.gallery-container {
+  display: grid;
+  grid-template-columns: repeat(3, 124px); /* 3 columns with fixed width */
+  gap: 3px; /* Adjust the gap between images */
+  justify-content: center; /* Center the columns */
+  margin: 0 auto; /* Ensure the grid is centered within its container */
+}
+
+.gallery-container img{
+  width: 124px;
+}
+
+.product-passport{
+  background-color: #E8E7E3;
+  text-align: center;
+  
+}
+
+.product-thumbnail{
+  mix-blend-mode: darken;
+  width: 170px;
+  
+}
+
+.product-card{
+  background-color: white;
+  margin: 17px;
+  border-radius: 21px;
+}
+
+.cardRow {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.cardColumn {
+  text-align: left;
+  /* border: 1px solid red; */
+  /* width: 100%; */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.productName {
+  text-align: center;
+  font-family: 'Inter';
+  font-size: 2.1rem !important;
+  font-style: normal;
+  font-weight: 400 !important;
+  line-height: normal;
+  /* border: 1px solid blue; */
+  padding: 5px;
+  font-size: 14px;
+  padding-top:5px;
+  padding-bottom: 20px;
+
+}
+
+.barcode {
+  margin-top: 10%;
+  width: 221px;
+}
+
+.companyLogo{
+
+  width: 40%;
+  /* display: block;
+  margin-left: auto; */
+  padding: 20px;
+}
+
+.product-passport{
+  height: 105vh;
+}
+
+.antheaWallet{
+  width: 155px;
+  margin-top: 20px;
+}
+
+
+.productButtons{
+  /* float: right; */
+  width: 7%;
+  /* margin-right: 20px;
+  margin-top: 5px; */
+}
+
+.navbar{
+  box-shadow: 0px -1px 50.2px -12px rgba(0, 0, 0, 0.25);
+}
+
+.nav-brand{
+  width: 100% !important;
+}
+
+.nav-link{
+  margin: 0 auto;
+  color: #000;
+  text-align: center;
+  font-family: 'Inter' !important;
+  font-size: 16px !important;
+  font-style: normal;
+  font-weight: 500 !important;
+  line-height: normal;
+  border-bottom: 1px solid black !important;
+}
+
+.nav-link-dk{
+  padding-left: 10%;
+  border-bottom: 0px solid black !important;
+  text-align: right !important;
+}
+
+.nav-link-dk:hover{
+  border-bottom: 1px solid black !important;
+}
+
+#basic-navbar-nav{
+  padding-top: 34px;
+  padding-bottom: 34px;
+}
+
+.navbar-toggler{
+  border: none !important;
+}
+
+.icons svg {
+  width: 24px !important;
+}
+
+.mobileCont{
+  /* background-color: blue; */
+  margin-top: 30px;
+  margin-left: 38px;
+  margin-right: 38px;
+}
+
+.desktopCont{
+  background-color: red;
+}
+
+.greyBox{
+  border-radius: 30px;
+  padding: 15px;
+  background: #F6F6F6;
+  vertical-align: baseline;
+  width: 100%;
+  margin-top: 20px !important;
+  text-align: center;
+}
+
+.align-baseline-custom {
+  vertical-align: baseline;
+}
+
+.row{
+  align-items: baseline;
+}
+
+.notificationIcon{
+  color: #E6E6E6 !important;
+}
+
+.arrowsIcon{
+  color: #D9D9D9 !important;
+  font-size: 24px !important;
+  width: 100%;
+}
+
+.graph{
+  width: 100%;
+}
+
+.linkButton{
+  border: none;
+  background-color: transparent;
+}
+
+.labelBold {
+  font-weight: 600 !important; /* Use !important cautiously */
+  flex: 8; /* Takes up 90% of the space */
+}
+
+.labelsemiBold{
+  color: #000;
+font-family: 'Inter';
+font-size: 10px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+.newcol {
+  display: flex;
+  align-items: center; /* This aligns the items vertically center in case they have different heights */
+
+}
+
+.arrowBtn {
+  flex: 2; /* Takes up 10% of the space */
+}
+
+.scraper {
+  margin: 0 auto;
+}
+
+.product-circle{
+  width:107px !important;
+  margin: 15px;
+}
+.product-similar{
+  width:80px !important;
 }
