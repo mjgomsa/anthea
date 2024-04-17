@@ -1,7 +1,3 @@
-import { useEffect, useState } from "react";
-import axios from "axios";
-import React from "react";
-
 import img000_full from "./assets/products/000-full.png";
 import img001_full from "./assets/products/001-full.png";
 import img002_full from "./assets/products/002-full.png";
@@ -38,11 +34,14 @@ import img014_circle from "./assets/products/014-circle.png";
 import img015_circle from "./assets/products/015-circle.png";
 import img016_circle from "./assets/products/016-circle.png";
 import img017_circle from "./assets/products/017-circle.png";
+import similar00_00 from "./assets/products/sim00_00.png";
+import similar00_01 from "./assets/products/sim00_01.png";
+import similar00_02 from "./assets/products/sim00_02.png";
 
 export const products = [
   {
     name: "Jolie Blu-Ylw Jacket",
-    verification: true,
+    verification: "verified",
     image: img000_full,
     circle: img000_circle,
     pid: "JCKT-YVN1VOY",
@@ -52,11 +51,11 @@ export const products = [
     value: 150.0,
     protection: 1,
     launch: new Date(2024, 5, 24),
-    sales: 20,
+    sales: 206,
   },
   {
     name: "Re-Cruiser Jacket",
-    verification: true,
+    verification: "pending",
     image: img001_full,
     circle: img001_circle,
     pid: "JCKT-5TTKBT9",
@@ -66,11 +65,11 @@ export const products = [
     value: 150.0,
     protection: 1,
     launch: new Date(2024, 5, 24),
-    sales: 10,
+    sales: 58,
   },
   {
     name: "Jolie Black Jacket",
-    verification: true,
+    verification: "not verified",
     image: img002_full,
     circle: img002_circle,
     pid: "JCKT-ISFRHK2",
@@ -80,11 +79,11 @@ export const products = [
     value: 150.0,
     protection: 1,
     launch: new Date(2024, 5, 24),
-    sales: 20,
+    sales: 19,
   },
   {
     name: "80s Puffer Jacket",
-    verification: true,
+    verification: "verified",
     image: img003_full,
     circle: img003_circle,
     pid: "JCKT-USO0YET",
@@ -94,11 +93,11 @@ export const products = [
     value: 150.0,
     protection: 1,
     launch: new Date(2024, 5, 24),
-    sales: 20,
+    sales: 115,
   },
   {
     name: "Rosie Nylon Jacket",
-    verification: true,
+    verification: "not verified",
     image: img004_full,
     circle: img004_circle,
     pid: "JCKT-AEBKMWB",
@@ -108,11 +107,11 @@ export const products = [
     value: 150.0,
     protection: 1,
     launch: new Date(2024, 5, 24),
-    sales: 20,
+    sales: 138,
   },
   {
     name: "Pink Ribbon Jacket",
-    verification: true,
+    verification: "verified",
     image: img005_full,
     circle: img005_circle,
     pid: "JCKT-CIPM6HU",
@@ -122,11 +121,11 @@ export const products = [
     value: 150.0,
     protection: 1,
     launch: new Date(2024, 5, 24),
-    sales: 20,
+    sales: 58,
   },
   {
     name: "Reik Satin Jacket",
-    verification: true,
+    verification: "pending",
     image: img006_full,
     circle: img006_circle,
     pid: "JCKT-8LHAW22",
@@ -136,11 +135,11 @@ export const products = [
     value: 150.0,
     protection: 1,
     launch: new Date(2024, 5, 24),
-    sales: 20,
+    sales: 39,
   },
   {
     name: "Americana Jacket",
-    verification: true,
+    verification: "verified",
     image: img007_full,
     circle: img007_circle,
     pid: "JCKT-15UPUFO",
@@ -150,11 +149,11 @@ export const products = [
     value: 150.0,
     protection: 1,
     launch: new Date(2024, 5, 24),
-    sales: 20,
+    sales: 122,
   },
   {
     name: "Dean Black Cruiser",
-    verification: true,
+    verification: "not verified",
     image: img008_full,
     circle: img008_circle,
     pid: "JCKT-OZ24YFQ",
@@ -164,11 +163,11 @@ export const products = [
     value: 150.0,
     protection: 1,
     launch: new Date(2024, 5, 24),
-    sales: 20,
+    sales: 66,
   },
   {
     name: "Bea Aviator Jacket",
-    verification: true,
+    verification: "pending",
     image: img009_full,
     circle: img009_circle,
     pid: "JCKT-K9XZDX0",
@@ -178,11 +177,11 @@ export const products = [
     value: 150.0,
     protection: 1,
     launch: new Date(2024, 5, 24),
-    sales: 20,
+    sales: 49,
   },
   {
     name: "Jack Satin Hoodie",
-    verification: true,
+    verification: "verified",
     image: img010_full,
     circle: img010_circle,
     pid: "JCKT-9GV4VM5",
@@ -192,11 +191,11 @@ export const products = [
     value: 150.0,
     protection: 1,
     launch: new Date(2024, 5, 24),
-    sales: 20,
+    sales: 21,
   },
   {
     name: "Retro Cruise Jacket",
-    verification: true,
+    verification: "not verified",
     image: img011_full,
     circle: img011_circle,
     pid: "JCKT-KJ3Q2SV",
@@ -206,11 +205,11 @@ export const products = [
     value: 150.0,
     protection: 1,
     launch: new Date(2024, 5, 24),
-    sales: 20,
+    sales: 25,
   },
   {
     name: "Satin Bockey Jacket",
-    verification: true,
+    verification: "verified",
     image: img012_full,
     circle: img012_circle,
     pid: "JCKT-DV3ZCAP",
@@ -220,11 +219,11 @@ export const products = [
     value: 150.0,
     protection: 1,
     launch: new Date(2024, 5, 24),
-    sales: 20,
+    sales: 17,
   },
   {
     name: "Satin Jockey Jacket",
-    verification: true,
+    verification: "pending",
     image: img013_full,
     circle: img013_circle,
     pid: "JCKT-4LGDLX7",
@@ -238,7 +237,7 @@ export const products = [
   },
   {
     name: "Reveal Nylon Jacket",
-    verification: true,
+    verification: "verified",
     image: img014_full,
     circle: img014_circle,
     pid: "JCKT-MEK1XHJ",
@@ -248,11 +247,11 @@ export const products = [
     value: 150.0,
     protection: 1,
     launch: new Date(2024, 5, 24),
-    sales: 20,
+    sales: 76,
   },
   {
     name: "Joe Leather Jacket",
-    verification: true,
+    verification: "verified",
     image: img015_full,
     circle: img015_circle,
     pid: "JCKT-5JNTL7D",
@@ -262,11 +261,11 @@ export const products = [
     value: 150.0,
     protection: 1,
     launch: new Date(2024, 5, 24),
-    sales: 20,
+    sales: 140,
   },
   {
     name: "Gummy Jacket",
-    verification: true,
+    verification: "pending",
     image: img016_full,
     circle: img016_circle,
     pid: "JCKT-EDGW16R",
@@ -276,11 +275,11 @@ export const products = [
     value: 150.0,
     protection: 1,
     launch: new Date(2024, 5, 24),
-    sales: 20,
+    sales: 24,
   },
   {
     name: "Tangy Jill Jacket",
-    verification: true,
+    verification: "not verified",
     image: img017_full,
     circle: img017_circle,
     pid: "JCKT-0ZADF9Q",
@@ -290,6 +289,12 @@ export const products = [
     value: 150.0,
     protection: 1,
     launch: new Date(2024, 5, 24),
-    sales: 20,
+    sales: 101,
+  },
+];
+
+export const similarProds = [
+  {
+    simImages: [similar00_00, similar00_01, similar00_02],
   },
 ];

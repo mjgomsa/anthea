@@ -1,7 +1,7 @@
 import * as d3 from "d3";
 
 const DrawDonutChart = (element, data) => {
-  const colors = ["#D9D9D9", "#A01313"]; // grey and red
+  const colors = ["#4A25E3", "#D9D9D9"]; // purple and grey
   const boxSize = 450; // graph boxsize, in pixels
   const width = 640; // outer width, in pixels
   const height = 400; // outer height, in pixels
@@ -30,7 +30,7 @@ const DrawDonutChart = (element, data) => {
     .attr("font-size", "60px")
     .attr("fill", "#000000")
     .attr("dy", "0.5em")
-    .text(`${data[1].value}%`);
+    .text(`${Math.round(data[0].value)}%`);
 
   const arcGenerator = d3
     .arc()
