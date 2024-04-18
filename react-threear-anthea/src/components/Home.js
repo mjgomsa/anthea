@@ -4,6 +4,10 @@ import { Container } from "react-bootstrap";
 import Notifications from "./modules/Notification.js";
 import Metrics from "./modules/Metrics.js";
 import SimilarProdsSum from "./modules/SimilarProdsSum.js";
+import simprodimg from "../assets/brand/similarprod.png";
+import { similarProds } from "../Data.js";
+import button from "../assets/brand/button.png";
+import { Link } from "react-router-dom";
 
 export const Home = ({ products }) => {
   const [isDesktop, setIsDesktop] = useState(false);
@@ -29,10 +33,17 @@ export const Home = ({ products }) => {
       <h2>Metrics</h2>
       <Metrics products={products} />
 
-      <h2>Similar Products</h2>
-      <SimilarProdsSum products={products} />
+      <br></br>
+      <br></br>
+      {/* <h2>Similar Products</h2> */}
+      {/* <SimilarProdsSum products={products} /> */}
+      <img src={simprodimg} style={{ width: "100%" }}></img>
 
-      <h2>Quicklinks</h2>
+      {/* <h2>Quicklinks</h2> */}
+      <Link to={"/anthea"} className="image-button fixedButton">
+        <img src={button} alt="Button inflated" />
+        <span className="button-text">Add Product</span>
+      </Link>
     </div>
   );
 

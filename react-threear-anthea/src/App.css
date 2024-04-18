@@ -87,6 +87,16 @@ h5 {
   font-size: 14px;
 }
 
+h6{
+  color: #000;
+  text-align: right;
+  font-family: 'Inter';
+  font-size: 16px !important;
+  font-style: normal !important;
+  font-weight: 500 !important;
+  line-height: normal !important;
+}
+
 .logo{
   padding-left: 40px;;
 }
@@ -99,21 +109,6 @@ h5 {
   border-bottom: 0.5px solid #E6E4E0;
 }
 
-.profilePicture {
-  width: 145px; 
-  margin: auto;
-  display: block;
-  padding-top: 10%;
-}
-
-.valuationParagraph{
-  text-align: center;
-}
-
-.prof_name {
-  text-align: center;
-  font-weight: 800;
-}
 
 .gallery-container {
   display: grid;
@@ -148,79 +143,6 @@ h5 {
   height: 25px;
 }
 
-
-.product-passport{
-  background-color: #E8E7E3;
-  text-align: center;
-  
-}
-
-.product-thumbnail{
-  mix-blend-mode: darken;
-  width: 170px;
-  
-}
-
-.product-card{
-  background-color: white;
-  margin: 17px;
-  border-radius: 21px;
-}
-
-.cardRow {
-  display: flex;
-}
-
-.cardColumn {
-  text-align: left;
-  /* border: 1px solid red; */
-  /* width: 100%; */
-}
-
-.productName {
-  text-align: center;
-  font-family: 'Inter';
-  font-size: 2.1rem !important;
-  font-style: normal;
-  font-weight: 400 !important;
-  line-height: normal;
-  /* border: 1px solid blue; */
-  padding: 5px;
-  font-size: 14px;
-  padding-top:5px;
-  padding-bottom: 20px;
-
-}
-
-.barcode {
-  margin-top: 10%;
-  width: 221px;
-}
-
-.companyLogo{
-
-  width: 40%;
-  /* display: block;
-  margin-left: auto; */
-  padding: 20px;
-}
-
-.product-passport{
-  height: 105vh;
-}
-
-.antheaWallet{
-  width: 155px;
-  margin-top: 20px;
-}
-
-
-.productButtons{
-  /* float: right; */
-  width: 7%;
-  /* margin-right: 20px;
-  margin-top: 5px; */
-}
 
 .navbar{
   box-shadow: 0px -1px 50.2px -12px rgba(0, 0, 0, 0.25);
@@ -264,15 +186,13 @@ h5 {
   margin-right: 3px;
 }
 
-.icons svg {
-  width: 24px !important;
-}
+
 
 .mobileCont{
   /* background-color: blue; */
-  margin-top: 30px;
-  margin-left: 18px;
-  margin-right: 18px;
+  padding-top: 30px;
+  padding-left: 18px;
+  padding-right: 18px;
 }
 
 .desktopCont{
@@ -288,12 +208,6 @@ h5 {
   /* height: 100%; */
   margin-top: 20px !important;
   /* text-align: center; */
-}
-
-
-.top3{
-  /* padding-top: 13px;
-  padding-bottom: 13px; */
 }
 
 .align-baseline-custom {
@@ -351,4 +265,84 @@ line-height: normal;
 }
 .product-similar{
   width:80px !important;
+}
+
+.productPageImage{
+  height: 246px;
+  margin: 0 auto;
+  margin-top: -30px;
+  display: block;
+      
+}
+
+.whiteBox{
+  border-radius: 5px;
+  padding: 15px;
+  background: #FFF;
+  vertical-align: baseline;
+  width: 100%;
+  /* margin-top: 20px !important; */
+  /* text-align: center; */
+}
+
+.verification-icon-card svg{
+  height: 29px;
+}
+
+.marg11{
+  margin-top: 11px !important;
+}
+
+.marg29{
+  padding-top: 29px !important;
+  padding-bottom: 24px;
+}
+
+.table-gal{
+  margin-bottom:29px ;
+}
+
+.image-button {
+  position: relative;
+  border: none;
+  padding: 0;
+  background: none;
+  cursor: pointer;
+}
+
+.fixedbutton {
+  position: static;
+  bottom: 0px;
+  right: 0px; 
+}
+
+.image-button img {
+  width: 100%;
+  height: auto;
+}
+
+.button-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+  text-align: center;
+  pointer-events: none; /* Ensure the text doesn't interfere with button clicks */
+}
+
+.pendingVerification {
+  position: relative;
+}
+
+.pendingVerification::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color:rgba(255, 255, 255, 0.84);
 }

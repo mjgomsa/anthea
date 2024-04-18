@@ -131,7 +131,7 @@ export const Gallery = ({ products }) => {
             <Link
               className="gallery-circle"
               key={index}
-              to={`/product/${product.pid}`} //route to product page
+              to={`anthea/product/${product.pid}`} //route to product page
             >
               <img
                 src={product.circle}
