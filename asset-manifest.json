@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/anthea/static/css/main.27ef3bec.css",
-    "main.js": "/anthea/static/js/main.b6a405f2.js",
+    "main.js": "/anthea/static/js/main.10ce643d.js",
     "static/media/similarprod.png": "/anthea/static/media/similarprod.aae601609ba9a3990f9a.png",
     "static/media/logo.png": "/anthea/static/media/logo.b6618bae6520af2a8036.png",
     "static/media/Inter-VariableFont.ttf": "/anthea/static/media/Inter-VariableFont.853e01975d2783d9fa29.ttf",
@@ -47,10 +47,10 @@
     "static/media/sim00_02.png": "/anthea/static/media/sim00_02.ad57976c13d090008057.png",
     "index.html": "/anthea/index.html",
     "main.27ef3bec.css.map": "/anthea/static/css/main.27ef3bec.css.map",
-    "main.b6a405f2.js.map": "/anthea/static/js/main.b6a405f2.js.map"
+    "main.10ce643d.js.map": "/anthea/static/js/main.10ce643d.js.map"
   },
   "entrypoints": [
     "static/css/main.27ef3bec.css",
-    "static/js/main.b6a405f2.js"
+    "static/js/main.10ce643d.js"
   ]
 }
