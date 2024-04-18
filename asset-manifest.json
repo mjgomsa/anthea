@@ -1,7 +1,8 @@
 {
   "files": {
-    "main.css": "/anthea/static/css/main.a70d9e05.css",
-    "main.js": "/anthea/static/js/main.04b987ee.js",
+    "main.css": "/anthea/static/css/main.27ef3bec.css",
+    "main.js": "/anthea/static/js/main.b6a405f2.js",
+    "static/media/similarprod.png": "/anthea/static/media/similarprod.aae601609ba9a3990f9a.png",
     "static/media/logo.png": "/anthea/static/media/logo.b6618bae6520af2a8036.png",
     "static/media/Inter-VariableFont.ttf": "/anthea/static/media/Inter-VariableFont.853e01975d2783d9fa29.ttf",
     "static/media/003-full.png": "/anthea/static/media/003-full.67c2088eb7a0e93a304c.png",
@@ -40,15 +41,16 @@
     "static/media/002-circle.png": "/anthea/static/media/002-circle.9b844e13f130b439b8a3.png",
     "static/media/006-circle.png": "/anthea/static/media/006-circle.bb24bc5c35bc944612dc.png",
     "static/media/015-circle.png": "/anthea/static/media/015-circle.27247ce6746b883d5756.png",
+    "static/media/button.png": "/anthea/static/media/button.544ccb6dbd96ec44fa76.png",
     "static/media/sim00_00.png": "/anthea/static/media/sim00_00.6b3fe1195db72069263f.png",
     "static/media/sim00_01.png": "/anthea/static/media/sim00_01.8641cd14be30190acc0d.png",
     "static/media/sim00_02.png": "/anthea/static/media/sim00_02.ad57976c13d090008057.png",
     "index.html": "/anthea/index.html",
-    "main.a70d9e05.css.map": "/anthea/static/css/main.a70d9e05.css.map",
-    "main.04b987ee.js.map": "/anthea/static/js/main.04b987ee.js.map"
+    "main.27ef3bec.css.map": "/anthea/static/css/main.27ef3bec.css.map",
+    "main.b6a405f2.js.map": "/anthea/static/js/main.b6a405f2.js.map"
   },
   "entrypoints": [
-    "static/css/main.a70d9e05.css",
-    "static/js/main.04b987ee.js"
+    "static/css/main.27ef3bec.css",
+    "static/js/main.b6a405f2.js"
   ]
 }
