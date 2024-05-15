@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import React from "react";
-import { Col, Row, Container } from "react-bootstrap";
-import SimilarProdsSum from "./modules/SimilarProdsSum.js";
+import { Col, Row } from "react-bootstrap";
+// import SimilarProdsSum from "./modules/SimilarProdsSum.js";
 import button from "../assets/brand/button.png";
 import { Link } from "react-router-dom";
 import imgPlaceholder from "../assets/brand/imgPlaceholder.png";
@@ -11,7 +11,7 @@ import "rsuite/dist/rsuite.min.css";
 
 export const AddProtection = ({ products }) => {
   const [isDesktop, setIsDesktop] = useState(false);
-  const [value, onChange] = useState(new Date());
+  // const [value, onChange] = useState(new Date());
 
   useEffect(() => {
     const handleResize = () => {

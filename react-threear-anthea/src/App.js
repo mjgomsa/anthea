@@ -1,19 +1,18 @@
-// App.js
 import React from "react";
 import "./App.css";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { Navigation } from "./components/Navigation.js"; // Import Navigation component
-import { Home } from "./components/Home.js"; // Import Home component
-import { Gallery } from "./components/Gallery.js"; // Import Gallery component
-import { ProductPage } from "./components/productPage.js"; // Import ProductPage component
+import { HashRouter, Routes, Route } from "react-router-dom";
+import { Navigation } from "./components/Navigation.js";
+import { Home } from "./components/Home.js";
+import { Gallery } from "./components/Gallery.js";
+import { ProductPage } from "./components/ProductPage.js";
 import { SimilarPoductPage } from "./components/SimilarPoductPage.js";
-import { AddProtection } from "./components/addProtection.js";
+import { AddProtection } from "./components/AddProtection.js";
 import { Certificate } from "./components/Certificate.js";
 import { products } from "./Data";
 
 function App() {
   return (
-    <BrowserRouter>
+    <div>
       <Navigation />
       <Routes>
         <Route path="/" element={<Home products={products} />} />
@@ -38,7 +37,7 @@ function App() {
           element={<Certificate products={products} />}
         />
       </Routes>
-    </BrowserRouter>
+    </div>
   );
 }
 

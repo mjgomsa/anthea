@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Navbar, Nav, Container } from "react-bootstrap";
 import logo from "../assets/brand/logo.png";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 export function Navigation() {
   const [isDesktop, setIsDesktop] = useState(false);
@@ -111,10 +111,18 @@ export function Navigation() {
         <Navbar.Toggle as={CustomToggle} aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ml-auto">
-            <Nav.Link href="/">Dashboard</Nav.Link>
-            <Nav.Link href="/gallery">Product Gallery</Nav.Link>
-            <Nav.Link href="/similar">Similar Products</Nav.Link>
-            <Nav.Link href="/logout">Logout</Nav.Link>
+            <Link to="/" className="nav-link">
+              Dashboard
+            </Link>
+            <Link to="/gallery" className="nav-link">
+              Product Gallery
+            </Link>
+            <Link to="/similar" className="nav-link">
+              Similar Products
+            </Link>
+            <Link to="/logout" className="nav-link">
+              Logout
+            </Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
