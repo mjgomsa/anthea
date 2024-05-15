@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/anthea/static/css/main.9077f8e2.css",
-    "main.js": "/anthea/static/js/main.34e5629a.js",
+    "main.js": "/anthea/static/js/main.d8f8b1a2.js",
     "static/js/239.ad8d573d.chunk.js": "/anthea/static/js/239.ad8d573d.chunk.js",
     "static/js/213.3f0cd228.chunk.js": "/anthea/static/js/213.3f0cd228.chunk.js",
     "static/js/455.084f0f9c.chunk.js": "/anthea/static/js/455.084f0f9c.chunk.js",
@@ -57,13 +57,13 @@
     "static/media/sim15_00.png": "/anthea/static/media/sim15_00.cae9f887ade9627268be.png",
     "index.html": "/anthea/index.html",
     "main.9077f8e2.css.map": "/anthea/static/css/main.9077f8e2.css.map",
-    "main.34e5629a.js.map": "/anthea/static/js/main.34e5629a.js.map",
+    "main.d8f8b1a2.js.map": "/anthea/static/js/main.d8f8b1a2.js.map",
     "239.ad8d573d.chunk.js.map": "/anthea/static/js/239.ad8d573d.chunk.js.map",
     "213.3f0cd228.chunk.js.map": "/anthea/static/js/213.3f0cd228.chunk.js.map",
     "455.084f0f9c.chunk.js.map": "/anthea/static/js/455.084f0f9c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.9077f8e2.css",
-    "static/js/main.34e5629a.js"
+    "static/js/main.d8f8b1a2.js"
   ]
 }
