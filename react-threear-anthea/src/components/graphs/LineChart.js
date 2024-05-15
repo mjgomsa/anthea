@@ -84,7 +84,7 @@ const DrawLineChart = (element, data) => {
     .datum(data)
     .attr("fill", "none")
     .attr("stroke", "#4A25E3")
-    .attr("stroke-width", 2)
+    .attr("strokeWidth", 2)
     .attr("d", line);
 
   // Add circles for data points with y value displayed over the circle

@@ -22,7 +22,7 @@ export const ProductPage = ({ product }) => {
   const getButtonText = (status) => {
     switch (status) {
       case "verified":
-        return "View Ceritificate";
+        return "View Certificate";
       case "not verified":
         return "Add Protection";
       case "pending":
@@ -35,13 +35,13 @@ export const ProductPage = ({ product }) => {
   const generateRoute = (verificationStatus) => {
     switch (verificationStatus) {
       case "verified":
-        return "/anthea/certificate"; // Route for verified products
+        return "/certificate"; // Route for verified products
       case "not verified":
-        return "/anthea/addproduct"; // Route for products not verified
+        return "/addprotection"; // Route for products not verified
       case "pending":
         return ""; // Route for products with pending verification
       default:
-        return "/anthea"; // Default route
+        return "/"; // Default route
     }
   };
 
@@ -143,8 +143,17 @@ export const ProductPage = ({ product }) => {
       setIsDesktop(window.innerWidth > 768); // Adjust the breakpoint as per your design
     };
 
+    // Set initial state based on screen width
+    setIsDesktop(window.innerWidth > 768);
+
+    // Scale up elements to 3x if it's a desktop view
+    if (window.innerWidth > 768) {
+      document.body.style.zoom = 3; // Adjust the zoom factor as needed
+    } else {
+      document.body.style.zoom = 1; // Reset zoom for mobile view
+    }
+
     window.addEventListener("resize", handleResize);
-    handleResize(); // Initial check
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
@@ -288,10 +297,6 @@ export const ProductPage = ({ product }) => {
     </div>
   );
 
-  const desktopProduct = (
-    <div className="desktopCont">
-      <h1>Hello Desktop</h1>
-    </div>
-  );
+  const desktopProduct = <div className="desktopCont">{mobileProduct}</div>;
   return isDesktop ? desktopProduct : mobileProduct;
 };

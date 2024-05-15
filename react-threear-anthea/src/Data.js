@@ -34,9 +34,15 @@ import img014_circle from "./assets/products/014-circle.png";
 import img015_circle from "./assets/products/015-circle.png";
 import img016_circle from "./assets/products/016-circle.png";
 import img017_circle from "./assets/products/017-circle.png";
-import similar00_00 from "./assets/products/sim00_00.png";
-import similar00_01 from "./assets/products/sim00_01.png";
-import similar00_02 from "./assets/products/sim00_02.png";
+import similar03_00 from "./assets/products/sim03_00.png";
+import similar03_01 from "./assets/products/sim03_01.png";
+import similar03_02 from "./assets/products/sim03_02.png";
+import similar14_00 from "./assets/products/sim14_00.png";
+import similar14_01 from "./assets/products/sim14_01.png";
+import similar14_02 from "./assets/products/sim14_02.png";
+import similar15_00 from "./assets/products/sim15_00.png";
+import similar15_01 from "./assets/products/sim15_01.png";
+import similar15_02 from "./assets/products/sim15_02.png";
 
 export const products = [
   {
@@ -293,8 +299,8 @@ export const products = [
   },
 ];
 
-export const similarProds = [
-  {
-    simImages: [similar00_00, similar00_01, similar00_02],
-  },
-];
+export const similarProds = {
+  prod3: [similar03_00, similar03_01, similar03_02],
+  prod14: [similar14_00, similar14_01, similar14_02],
+  prod15: [similar15_00, similar15_01, similar15_02],
+};

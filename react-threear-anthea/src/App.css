@@ -4,6 +4,11 @@
   font-weight: 100 900; /* Adjust based on the actual weight range supported by the font */
 }
 
+div#root {
+  margin: 0 auto;
+  float: unset; height: 100%; width: 100%;
+  }
+
 .bold{
   font-weight: 500 !important;
 }
@@ -60,7 +65,7 @@ h3{
   font-family: 'Inter';
   font-size: 14px !important;
   font-style: normal !important;
-  font-weight: 400 !important;
+  font-weight: 450 !important;
   margin-bottom: 0 !important;
   /* line-height: 18px !important; 128.571% */
 }
@@ -152,6 +157,10 @@ h6{
   width: 110% !important;
 }
 
+.desktopNav{
+  /* background-color: blue; */
+}
+
 .nav-link{
   margin: 0 auto;
   color: #000 !important;
@@ -193,10 +202,13 @@ h6{
   padding-top: 30px;
   padding-left: 18px;
   padding-right: 18px;
+  padding-bottom: 30px;
 }
 
 .desktopCont{
-  background-color: red;
+  /* background-color: red; */
+  margin: 0 auto;
+  width: 30vw;
 }
 
 .greyBox{
@@ -205,9 +217,26 @@ h6{
   background: #F6F6F6;
   vertical-align: baseline;
   width: 100%;
-  /* height: 100%; */
   margin-top: 20px !important;
-  /* text-align: center; */
+  /* text-align: middle; */
+}
+
+.pinkBox{
+  border-radius: 5px;
+  padding: 15px;
+  background: #CA0CD0;
+  vertical-align: baseline;
+  width: 100%;
+  margin-top: 20px !important;
+  /* text-align: middle; */
+}
+
+.pinkSpan{
+  font-weight: 500 !important;
+}
+
+.pinkBox p {
+  color: white !important;
 }
 
 .align-baseline-custom {
@@ -220,6 +249,29 @@ h6{
 
 .arrowIconRow{
   padding-top: 10px !important;
+}
+
+.secButton{
+  text-align: right;
+  /* float: right; */
+}
+
+.secButtonText{
+  
+  color: #CA0CD0;
+font-size: 14px !important;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+text-decoration-line: underline;
+margin-right: 0;
+}
+
+.rightArrow{
+  width: 8px;
+height: 18px;
+align-self: right;
+float: right;
 }
 
 .graph{
@@ -263,8 +315,37 @@ line-height: normal;
   width:107px !important;
   margin: 15px;
 }
+
+.product-similar-main{
+  width: 43px;
+height: 43px;
+}
+
+.similarProdTitle{
+  padding-bottom: 9px;
+}
+
+.linksimilarTitle{
+text-decoration: none;
+}
+.product-similar-mainName{
+  text-align: left;
+  color: #4A25E3;
+font-size: 16px !important;
+font-style: normal;
+font-weight: 500 !important;
+line-height: normal;
+}
+
+.similarProdMainBox{
+  border-bottom: 1px solid #E6E4E0;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
 .product-similar{
   width:80px !important;
+  border-radius: 3px !important;
 }
 
 .productPageImage{
@@ -302,6 +383,31 @@ line-height: normal;
   margin-bottom:29px ;
 }
 
+.fixed-button-container {
+  position: fixed;
+  bottom: 0;
+  /* width: 100% !important; */
+  width: 84.5% !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: yellow; */
+}
+
+/* .image-button-sticky {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  background: none;
+  cursor: pointer;
+  margin: 0 auto;
+} */
+
+
 .image-button {
   position: relative;
   border: none;
@@ -312,13 +418,11 @@ line-height: normal;
 
 .fixedbutton {
   position: static;
-  bottom: 0px;
-  right: 0px; 
+
 }
 
 .image-button img {
-  width: 100%;
-  height: auto;
+  width:100%;
 }
 
 .button-text {
@@ -345,4 +449,41 @@ line-height: normal;
   width: 100%;
   height: 100%;
   background-color:rgba(255, 255, 255, 0.84);
+}
+
+.form{
+  width: 100%;
+  border-radius: 5px;
+border: 1px solid rgba(0, 0, 0, 0.08);
+background: #FFF;
+}
+
+.required::after {
+  content: "  *";
+  color: #FF0303;
+}
+
+.formSection{
+  padding-bottom:13px;
+}
+
+.formCarrouselImg{
+  width: 57.767px;
+height: 53.676px;
+}
+
+.react-date-picker__wrapper{
+  width: 100%;
+}
+
+.customDatePickerWidth{
+   width: 100%;
+}
+
+.proseCertificate{
+  text-align: center;
+  margin-top: 58%;
+  /* background-color: yellow; */
+  margin-left: 10%;
+  margin-right: 10%;
 }

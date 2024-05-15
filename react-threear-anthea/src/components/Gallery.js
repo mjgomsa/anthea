@@ -117,8 +117,17 @@ export const Gallery = ({ products }) => {
       setIsDesktop(window.innerWidth > 768); // Adjust the breakpoint as per your design
     };
 
+    // Set initial state based on screen width
+    setIsDesktop(window.innerWidth > 768);
+
+    // Scale up elements to 3x if it's a desktop view
+    if (window.innerWidth > 768) {
+      document.body.style.zoom = 3; // Adjust the zoom factor as needed
+    } else {
+      document.body.style.zoom = 1; // Reset zoom for mobile view
+    }
+
     window.addEventListener("resize", handleResize);
-    handleResize(); // Initial check
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
@@ -131,7 +140,7 @@ export const Gallery = ({ products }) => {
             <Link
               className="gallery-circle"
               key={index}
-              to={`anthea/product/${product.pid}`} //route to product page
+              to={`/product/${product.pid}`} //route to product page
             >
               <img
                 src={product.circle}
@@ -149,11 +158,7 @@ export const Gallery = ({ products }) => {
     </div>
   );
 
-  const dekstopGallery = (
-    <div className="desktopCont">
-      <h1>Hello Desktop</h1>
-    </div>
-  );
+  const dekstopGallery = <div className="desktopCont">{mobileGallery}</div>;
 
   return isDesktop ? dekstopGallery : mobileGallery;
 };

@@ -1,10 +1,31 @@
-// import React, { useState } from "react";
+import React from "react";
+import { useEffect, useState } from "react";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import { similarProds } from "../../Data";
+import { similarProds } from "../Data";
 import { Link } from "react-router-dom";
 
-const SimilarProdsSum = ({ products }) => {
+export const SimilarPoductPage = ({ products }) => {
+  const [isDesktop, setIsDesktop] = useState(false);
+  useEffect(() => {
+    const handleResize = () => {
+      setIsDesktop(window.innerWidth > 768); // Adjust the breakpoint as per your design
+    };
+
+    // Set initial state based on screen width
+    setIsDesktop(window.innerWidth > 768);
+
+    // Scale up elements to 3x if it's a desktop view
+    if (window.innerWidth > 768) {
+      document.body.style.zoom = 3; // Adjust the zoom factor as needed
+    } else {
+      document.body.style.zoom = 1; // Reset zoom for mobile view
+    }
+
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
   const rightArrow = (
     <svg
       className="rightArrow"
@@ -71,15 +92,32 @@ const SimilarProdsSum = ({ products }) => {
     </div>
   );
 
-  return (
-    <div className="row d-flex align-items-stretch">
-      <div className="col">
-        <div className="greyBox align-items-baseline">
-          <SimilarProdMainBox index={14} />
-          <SimilarProdMainBox index={3} />
+  const mobileSimilarPage = (
+    <div className="mobileCont">
+      <div className="pinkBox align-items-baseline">
+        <p>
+          <span className="pinkSpan">Warning</span> <br></br>
+          Our system utilizes advanced computer vision and scraping technologies
+          to summarize web products similar to Anthea-verified items. It
+          visualizes popular designs on other platforms but does not provide a
+          comprehensive list.
+        </p>
+      </div>
+      <h2>Similar Products</h2>
+      <div className="row d-flex align-items-stretch">
+        <div className="col">
+          <div className="greyBox align-items-baseline">
+            <SimilarProdMainBox index={14} />
+            <SimilarProdMainBox index={3} />
+            <SimilarProdMainBox index={15} />
+          </div>
         </div>
       </div>
     </div>
   );
+
+  const desktopSimilarPage = (
+    <div className="desktopCont">{mobileSimilarPage}</div>
+  );
+  return isDesktop ? desktopSimilarPage : mobileSimilarPage;
 };
-export default SimilarProdsSum;
